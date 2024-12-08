@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/firebase-adapter": "^2.7.4",
     "clsx": "^2.1.1",
-    "firebase-admin": "^13.0.1",
+    "firebase-admin": "^12.6.0",
     "lucide-react": "^0.454.0",
     "next": "15.0.2",
+    "next-auth": "^5.0.0-beta.25",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
     "tailwind-merge": "^2.5.4"
