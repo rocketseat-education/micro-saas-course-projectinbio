@@ -20,7 +20,16 @@ export default function PlanButtons() {
       >
         R$ 9,90 / mês
       </Button>
-      <Button>R$ 99,90 Vitalício</Button>
+      <Button
+        onClick={() =>
+          createStripeCheckout({
+            metadata: { profileId },
+            isSubscription: false,
+          })
+        }
+      >
+        R$ 99,90 Vitalício
+      </Button>
     </div>
   );
 }
