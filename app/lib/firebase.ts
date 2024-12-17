@@ -37,6 +37,6 @@ export async function getDownloadURLFromPath(path?: string) {
     action: "read",
     expires: "03-01-2500", // Não deixa expirar
   });
-  console.log(url);
+
   return url;
 }
