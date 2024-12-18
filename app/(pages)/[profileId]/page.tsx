@@ -11,6 +11,12 @@ import { notFound, redirect } from "next/navigation";
 import NewProject from "./new-project";
 import { getDownloadURLFromPath } from "@/app/lib/firebase";
 import { increaseProfileVisits } from "@/app/actions/increase-profile-visits";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ProjectInBio - Perfil",
+  description: "ProjectInBio - A plataforma de gestão de projetos em biologia.",
+};
 
 export default async function ProfilePage({
   params,
